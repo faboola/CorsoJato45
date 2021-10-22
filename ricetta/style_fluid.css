@@ -1,16 +1,16 @@
 body {
 
-   font-family: 'Helvetica', 'Arial',Verdana,sans-serif;
-   font-size:16px;
+   font-family: 'Nunito', sans-serif;
    background: #fff4c8;
 
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 3rem;
 }
 
 h2 {
+    font-size: 2rem;
     color:#555;
     font-weight: normal; /*elimino il grassetto!*/
     text-transform: uppercase; /*tutto in MAIUSCOLO!*/
@@ -18,16 +18,19 @@ h2 {
 }
 
 p {
-    margin-top: 24px;
-    margin-bottom: 48px;
+    margin-top:1rem;
+    margin-bottom: 2rem;
 }
 
 img {
-    margin-bottom:24px;
+    margin-bottom:1rem;
 }
 
+
 .main {
-    width:1000px; /*stringo il blocco principale dei contenuti*/
+    width:95%; /*stringo il blocco principale dei contenuti*/
+
+    max-width: 50rem;
     
     margin-left:auto;
     margin-right: auto; /*imposto i margini sx e dx uguali con il valore AUTO*/  
@@ -35,7 +38,7 @@ img {
 }
 
 .box {
-    padding:16px; /* margine interno al DIV*/
+    padding:1rem; /* margine interno al DIV*/
     /* nota: la classe .box è applicata a due DIV diversi e agisce su entrambi, assieme ad altre classi*/
 }
 
@@ -61,7 +64,7 @@ img {
 
 .passo {
     background:#ED8D31;
-    padding: 2px 6px; /*valore 1: sopra e sotto | valore 2: sinistra e destra*/
+    padding: 0.2rem 0.3rem; /*valore 1: sopra e sotto | valore 2: sinistra e destra*/
 
     /*in alternativa potrei fare:
     padding-left:6px;
