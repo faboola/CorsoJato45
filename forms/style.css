@@ -1,0 +1,14 @@
+.formGroup {
+    margin-bottom: 2rem;
+}
+
+label {
+    margin-right: 2rem;
+}
+
+#regione option {
+    text-transform: capitalize;
+    /*Mette la maiuscola a tutti i nomi di regione. 
+    Per qualche oscuro motivo non funziona su Mac. */
+
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Esempi Form</title>
+</head>
+<body>
+
+<!-- Nome
+Cognome
+Telefono
+E-mail
+Indirizzo (via + civico | regione | città )  
+Genere M F ALTRO
+
+Argomenti di interesse (fotografia | sport | cucina | viaggi | esoterismo)
+
+note/messaggio (testo esteso)
+
+pulsante invia  -->
+
+
+    <form action="" method="POST">
+    
+    <!-- Action: url del file che gestisce i dati del form
+    Method: POST (i dati sono nascosti) oppure GET (i dati vengono mostrati in chiaro sulla URL) 
+    
+     -->
+    <fieldset>
+            <legend>Inserisci i tuoi dati anagrafici</legend>
+
+            <div class="formGroup">
+                <input type="text" id="nome" name="nome" placeholder="Inserisci il tuo nome" required>
+                <label for="nome">Nome</label>
+                <!-- l'attributo FOR assegna la LABEL all'INPUT tramite ID -->
+                <input type="text" id="cognome" name="cognome" placeholder="Inserisci il tuo cognome" required>
+                <label for="cognome">Cognome</label>
+            </div>
+
+            <div class="formGroup">
+                <input type="tel" id="telefono" name="telefono" pattern="[0-9]{3}-[0-9]{7}" placeholder="XXX-XXXXXXX" required>
+                <label for="telefono">Numero di telefono</label>
+                <input type="email" id="email" name="email" placeholder="indirizzo e-mail" required>
+                <label for="email">Indirizzo e-mail</label>
+            </div>
+    
+            <div class="formGroup">
+                <input type="text" id="indirizzo" name="indirizzo">
+                <label for="indirizzo">Via e numero civico</label>
+                <select name="regione" id="regione">
+                    <option value="" selected >Seleziona</option>
+                    <option value='abruzzo'>abruzzo</option>
+                    <option value='basilicata'>basilicata</option>
+                    <option value='calabria'>calabria</option>
+                    <option value='campania'>campania</option>
+                    <option value='emilia-romagna'>emilia romagna</option>
+                    <option value='friuli-venezia-giulia'>friuli venezia giulia</option>
+                    <option value='lazio'>lazio</option>
+                    <option value='liguria'>liguria</option>
+                    <option value='lombardia'>lombardia</option>
+                    <option value='marche'>marche</option>
+                    <option value='molise'>molise</option>
+                    <option value='piemonte'>piemonte</option>
+                    <option value='puglia'>puglia</option>
+                    <option value='sardegna'>sardegna</option>
+                    <option value='sicilia'>sicilia</option>
+                    <option value='toscana'>toscana</option>
+                    <option value='trentino-alto-adige'>trentino alto adige</option>
+                    <option value='umbria'>umbria</option>
+                    <option value='valle-d-aosta'>valle d'aosta</option>
+                    <option value='veneto'>veneto</option>
+                </select>
+                <label for="regione">Regione</label>
+                <input type="text" name ="citta" id="citta" >
+                <label for="citta">Città</label>
+            </div>
+       
+            <div class="formGroup">
+                <input type="radio" id="genere-m" name="genere" value="m">
+                <label for="genere-m">M</label>
+                <input type="radio" id="genere-f" name="genere" value="f">
+                <label for="genere-f">F</label>
+                <input type="radio" id="genere-altro" name="genere" value="altro">
+                <label for="genere-altro">Altro</label>
+            </div>
+       
+        </fieldset>
+
+
+            <fieldset>
+                <legend>Scegli gli argomenti che ti interessano</legend>
+                <div class="formGroup">
+                    <input type="checkbox" id="fotografia" name="interessi" value="fotografia">
+                    <label for="fotografia">Fotografia</label>
+                    <input type="checkbox" id="sport" name="interessi" value="sport">
+                    <label for="sport">Sport</label>
+                    <input type="checkbox" id="cucina" name="interessi" value="cucina">
+                    <label for="cucina">Cucina</label>
+                    <input type="checkbox" id="viaggi" name="interessi" value="viaggi">
+                    <label for="viaggi">Viaggi</label>
+                    <input type="checkbox" id="esoterismo" name="interessi" value="esoterismo">
+                    <label for="esoterismo">Esoterismo</label>
+                </div>
+            </fieldset>
+
+
+        <!-- <input type="range" id="punti" name="punti" min="0" max="100" step="10" value="">
+        <label for="punti">Quando spaccano le FORM?</label> -->
+
+
+
+        <div class="formGroup">
+            <textarea name="note" id="note" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="formGroup">
+            <input type="reset" value="Ho sbagliato tutto!">
+            <input type="submit" value="Invia">
+        </div>
+
+    </form>
+    
+</body>
+</html>
