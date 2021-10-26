@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esempio tabelle</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wrapper">
+        
+    <h1>Voli e destinazioni</h1>
+    
+    <table id="voli">
+    <thead>
+        <!-- Intestazione della tabella (non obbligatoria!) -->
+        Proposte di viaggio per il weekend del 1 Novembre 2021
+    </thead>
+    <tbody>
+        <!-- Corpo della tabella -->
+        <tr>
+            <th>Destinazione</th>
+            <th>Partenza</th>
+            <th>Arrivo</th>
+            <th>Costo</th>
+            <th>Compagnia</th>
+        </tr>
+        <tr>
+            <td>Londra</td>
+            <td>MXP 10:35</td>
+            <td>LHR 12:00</td>
+            <td>€ 64</td>
+            <td>EasyJet</td>
+        </tr>
+        <tr>
+            <td>Los Angeles</td>
+            <td>MXP 11:35</td>
+            <td>LAX 17:50</td>
+            <td>€ 150</td>
+            <td>Virgin Airlines</td>
+        </tr>
+        <tr>
+            <td>San Francisco</td>
+            <td>MXP 06:42</td>
+            <td>SFO 15:40</td>
+            <td>€ 150</td>
+            <td>American Airlines</td>
+        </tr>
+        <tr>
+            <td>Bucarest</td>
+            <td>BGY 08:50</td>
+            <td>OTP 10:35</td>
+            <td>€ 70</td>
+            <td>Ryan Air</td>
+        </tr>
+        <tr>
+            <td>New York</td>
+            <td>MXP 08:50</td>
+            <td>JFK 17:35</td>
+            <td>€ 120</td>
+            <td>Lufthansa</td>
+        </tr>
+        <tr>
+            <td>Palermo</td>
+            <td>MXP 08:50</td>
+            <td>PAL 10:35</td>
+            <td>€ 120</td>
+            <td>Air Italy</td>
+        </tr>
+    
+    </tbody>
+    
+    </table>
+    <h2>Tabella con footer</h2>
+    <table>
+    <thead>
+        Spese per il viaggio
+    </thead>
+       <tbody>
+       <tr>
+           <th>Tipo spesa</th>
+           <th>Costo</th>
+       </tr>
+       <tr>
+           <td>Volo</td>
+           <td>120</td>
+       </tr>
+       <tr>
+           <td>Auto</td>
+           <td>80</td>
+        </tr>
+    <tr>
+        <td>Albergo</td>
+        <td>90</td>
+    </tr>
+    <tfoot>
+        <!-- Footer della tabella (non obbligatorio - usato per somme e altri dati riassuntivi) -->
+        <tr>
+            <td>Totale</td>
+            <td>290</td>
+        </tr>
+    </tfoot>
+        
+    </tbody> 
+
+    </table>
+    
+    <h2>Tabella con celle unite</h2>
+    <table>
+    <tbody>
+        <tr>
+            <th>Mese</th>
+            <th>Spesa</th>
+        </tr>
+        <tr>
+            <td>Gennaio</td>
+            <td>250€</td>
+        </tr>
+        <tr>
+            <td>Febbraio</td>
+            <td>450€</td>
+        </tr>
+        <tr>
+            <td>Marzo</td>
+            <td>100€</td>
+        </tr>
+        <tr>
+            <td colspan="2">Totale: €180</td>
+            <!-- COLSPAN unisce più colonne |
+                 Nota che abbiamo messo una TD anziché 2,
+                  perché sono unite. Per unire più righe uso ROWSPAN sul TD-->
+        </tr>
+
+    
+    </tbody>
+    </table>
+
+    <table>
+        <caption>Orario III B</caption>
+        <thead>
+            <tr>
+                <th>Ora</th>
+                <th>Lunedì</th>
+                <th>Martedì</th>
+                <th>Mercoledì</th>
+                <th>Giovedì</th>
+                <th>Venerdì</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>I</th>
+                <td rowspan="3">Italiano</td>
+                <!-- UNISCO TRE CELLE IN VERTICALE -->
+                <td>Geografia</td>
+                <td nowrap>Ed. artistica</td>
+                <td colspan="2">Ed. Musicale</td>
+            </tr>
+            <tr>
+                <th>II</th>
+                <td rowspan="2">Scienze</td>
+                <td rowspan="2">Ed. fisica</td>
+                <td colspan="2">Matematica</td>
+            </tr>
+            <tr>
+                <th>III</th>
+                <td colspan="2">Italiano</td>
+            </tr>
+            <tr>
+                <th>IV</th>
+                <td>Storia</td>
+                <td>Matematica</td>
+                <td>Geografia</td>
+                <td colspan="2">Ed. tecnica</td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+</main>
+
+</body>
+</html>
