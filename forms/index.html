@@ -19,16 +19,14 @@ Genere M F ALTRO
 Argomenti di interesse (fotografia | sport | cucina | viaggi | esoterismo)
 
 note/messaggio (testo esteso)
-
 pulsante invia  -->
+<form action="mailto:davide.ghione@gmail.com" method="GET">
+<!-- 
 
-
-    <form action="" method="POST">
-    
-    <!-- Action: url del file che gestisce i dati del form
+    Action: url del file che gestisce i dati del form
     Method: POST (i dati sono nascosti) oppure GET (i dati vengono mostrati in chiaro sulla URL) 
     
-     -->
+-->
     <fieldset>
             <legend>Inserisci i tuoi dati anagrafici</legend>
 
@@ -42,7 +40,16 @@ pulsante invia  -->
 
             <div class="formGroup">
                 <input type="tel" id="telefono" name="telefono" pattern="[0-9]{3}-[0-9]{7}" placeholder="XXX-XXXXXXX" required>
+                <!--
+                Logica del pattern: 
+                [0-9]   range: da 0 a 9
+                {3}     tre caratteri
+                -       trattino di separazione
+                [0-9]   range:da 0 a 9
+                {7}     7 caratteri -->
+
                 <label for="telefono">Numero di telefono</label>
+
                 <input type="email" id="email" name="email" placeholder="indirizzo e-mail" required>
                 <label for="email">Indirizzo e-mail</label>
             </div>
@@ -90,21 +97,21 @@ pulsante invia  -->
         </fieldset>
 
 
-            <fieldset>
-                <legend>Scegli gli argomenti che ti interessano</legend>
-                <div class="formGroup">
-                    <input type="checkbox" id="fotografia" name="interessi" value="fotografia">
-                    <label for="fotografia">Fotografia</label>
-                    <input type="checkbox" id="sport" name="interessi" value="sport">
-                    <label for="sport">Sport</label>
-                    <input type="checkbox" id="cucina" name="interessi" value="cucina">
-                    <label for="cucina">Cucina</label>
-                    <input type="checkbox" id="viaggi" name="interessi" value="viaggi">
-                    <label for="viaggi">Viaggi</label>
-                    <input type="checkbox" id="esoterismo" name="interessi" value="esoterismo">
-                    <label for="esoterismo">Esoterismo</label>
-                </div>
-            </fieldset>
+        <fieldset>
+            <legend>Scegli gli argomenti che ti interessano</legend>
+            <div class="formGroup">
+                <input type="checkbox" id="fotografia" name="interessi" value="fotografia">
+                <label for="fotografia">Fotografia</label>
+                <input type="checkbox" id="sport" name="interessi" value="sport">
+                <label for="sport">Sport</label>
+                <input type="checkbox" id="cucina" name="interessi" value="cucina">
+                <label for="cucina">Cucina</label>
+                <input type="checkbox" id="viaggi" name="interessi" value="viaggi">
+                <label for="viaggi">Viaggi</label>
+                <input type="checkbox" id="esoterismo" name="interessi" value="esoterismo">
+                <label for="esoterismo">Esoterismo</label>
+            </div>
+        </fieldset>
 
 
         <!-- <input type="range" id="punti" name="punti" min="0" max="100" step="10" value="">
