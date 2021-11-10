@@ -1,0 +1,117 @@
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    /*serve a cambiare il Box Model su border-box sostituendo il default di content-box*/
+    /*per approfondire: https://css-tricks.com/box-sizing/ */
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+img {
+    max-width:100%;
+    height:auto;
+}
+
+.wrapper {
+    width:80%; 
+    margin: 0 auto; /*margine TOP+BOTTOM=0 | margine LEFT+RIGHT=auto*/
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   HEADER                                   */
+/* -------------------------------------------------------------------------- */
+
+#mainHeader {
+    display: flex;
+    flex-flow:row; /*proprietà di default che imposta il MAIN AXIS sull'asse orizzontale*/
+    justify-content: space-between; /*diponi gli oggetti in ORIZZONTALE (Main Axis) agli estremi del contenitore FLEX*/
+    align-items: center; /*centra gli oggetti in VERTICALE (Cross Axis!)*/
+}
+
+.mainMenu ul {
+    list-style-type: none; /*tolgo i puntini dalla lista del menu */
+    display: flex; /*applico FlexBox al GENITORE degli elementi del menu (li) */
+    
+}
+
+.mainMenu ul li { /*tutti gli LI contenuti da UL che a sua volta sta dentro a .mainMenu*/
+
+        margin-left:1rem;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                    HERO                                    */
+/* -------------------------------------------------------------------------- */
+
+#hero {
+   margin: 5rem 0; /*margini SOPRA e SOTTO a 5rem; margine sx e dx 0*/
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    INTRO                                   */
+/* -------------------------------------------------------------------------- */
+
+#intro {
+    display: flex;
+
+    align-items: center; /*mi riferisco al Cross Axis, cioè il verticale*/
+
+    margin-bottom: 5rem;
+}
+
+.introImg, .introText { /*sparando con la virgola applico le regole a ENTRAMBI i selettori*/
+    width: 50%; /*esattamente la metà del contenitore #intro*/
+}
+
+.introImg img {/*immagine dentro il DIV .introImg*/
+    width: 100%;
+}
+
+.introImg {
+    /* se volessi mettere l'immagine a DESTRA anziché a SINISTRA potrei usare order:1;*/
+    /*la proprietà ORDER si applica ai figli del contenitore Flexbox, e PARTE DA 0!*/
+}
+.introText {
+    padding:2rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   GALLERY                                  */
+/* -------------------------------------------------------------------------- */
+
+#gallery {
+    margin-bottom: 5rem;
+}
+
+.galleryWrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.galleryItem {
+    width: 25%;
+    padding:1rem;
+}
+
+.galleryItem img {
+    display: block;
+    /*serve per evitare che le immagini nella gallery abbiano uno spazio sotto. Lo spazio deriva dal
+    fatto che le immgini sono elementi in linea*/
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   FOOTER                                   */
+/* -------------------------------------------------------------------------- */
+
+#mainFooter {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background:#333;
+    color:#efefef;
+}

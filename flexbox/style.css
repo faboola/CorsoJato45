@@ -1,0 +1,14 @@
+
+.container {
+
+  display: flex;
+  flex-direction: row;
+flex-wrap: wrap; /*vai a capo quando finisci lo spazio*/
+ 
+
+}
+
+.image {
+
+}
+
