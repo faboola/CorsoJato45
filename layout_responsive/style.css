@@ -1,0 +1,50 @@
+/*regole generali per TUTTE le dimensioni schermo */
+body {
+    font-family: 'Poppins',sans-serif;
+}
+
+img {
+    width: 100%;
+    height:auto;
+}
+
+.wrapper {
+    width: 90%;
+    margin:0 auto;
+}
+
+#mainHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width:10rem;
+}
+
+.mainMenu ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.mainMenu li {
+margin-right:1rem;
+}
+
+
+@media (min-width:768px) {
+    /*tablet e simili*/
+
+}
+
+
+
+@media (min-width:1200px) {
+    /*desktop e portatili*/
+
+    .wrapper {
+        width: 80%;
+    }
+
+
+}
