@@ -49,7 +49,59 @@ img {
 
 #hero {
    margin: 5rem 0; /*margini SOPRA e SOTTO a 5rem; margine sx e dx 0*/
+   position:relative;
 }
+
+.overlay {
+    position:absolute; /*deve posizionarsi SOVRAPPOSTO al genitore #hero*/
+
+    top:0;
+    left:0;
+
+    width:100%; /*occupa tutto lo spazio del genitore, in altezza e larghezza*/
+    height: 100%;
+
+    background: rgb(0,0,0); /*fallback per i browser che non supportano GRADIENT*/
+    background: radial-gradient(circle, rgba(0,0,0,0.15730042016806722) 0%, rgba(0,0,0,1) 100%);
+    /* background con sfondo copiato da CSS GRADIENT GENERATOR*/
+
+   
+}
+
+.heroText {
+    position:absolute;
+    width: 100%;
+    /*---hack per centrare il DIV rispetto al genitore con POSITION:absolute--*/
+
+    height:5rem; /*fornire un'altezza in rem/px*/
+    bottom:0; /*posizionare a 0 su tutti e 4 i lati*/
+    left: 0;
+    right:0;
+    top:0;
+    margin:auto; /*con il margin:auto resta centrato*/
+
+    /*---fine hack per posizionamento centrato!---*/
+
+    z-index:1; /*al livello di sovrapposizione più alto rispetto al default z-index 0;*/
+    /* un elemento con z-index:1 resta SOPRA gli elementi con z-index:0*/
+    /* un elemento con z-index:2 resta SOPRA gli elementi con z-index:1*/
+
+
+    color:#fff;
+    padding:2rem;
+    text-align: center;
+   
+}
+
+/*se volessi centrare il testo con FLEXBOX, in alternativa al trucco di cui sopra:
+.heroText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height:100%;
+}
+*/
 
 /* -------------------------------------------------------------------------- */
 /*                                    INTRO                                   */
