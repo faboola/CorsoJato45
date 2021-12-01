@@ -9,15 +9,103 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <link rel="stylesheet" href="style.css">
+    <!-- per aggiungere regole personalizzate includo un css mio -->
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- CSS PER FONT AWESOME -->
+
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+   <!-- CSS PER IL CAROUSEL -->
 
 
 </head>
 <body>
 
+
 <header id="mainHeader">
-    HEADER
+
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">LOGO </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-info-circle me-2"></i>About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-search me-2"></i>Search</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+         
+          </div>
+        </div>
+      </nav>
+    
 </header>
+
+
+
+
+
 <main>
+
+<div id="hero">
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img class="w-100"src="https://source.unsplash.com/1200x800/?mustang" alt="">
+          </div>
+
+          <div class="swiper-slide">
+            <img class="w-100"src="https://source.unsplash.com/1200x800/?corvette" alt="">
+          </div>
+
+          <div class="swiper-slide">
+            <img class="w-100"src="https://source.unsplash.com/1200x800/?camaro" alt="">
+          </div>
+
+     
+        
+        </div>
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+</div>
+
+    
 
 <section id="featured">
        <div class="container">
@@ -70,9 +158,10 @@
 
     <section id="gallery">
         <div class="container">
+
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xxl-5">
                 <!-- in row-cols il numero corrisponde al numero di elementi contenuti e non alle unità sulla griglia  -->
-                <div class="col">
+                <div class="col mb-4">
                     <div class="photo">
                         <img src="https://source.unsplash.com/600x600/?dog" alt="">
                     </div>
@@ -136,16 +225,139 @@
     </section>
 </main>
 
-<footer id="footer">
-<div class="row">
-    <div class="col-md-4">Info</div>
-    <div class="col-md-4">Contatti</div>
-    <div class="col-md-4">Credits</div>
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <div class="card">
+                <div class="card-header">Cat of the day</div>
+                <img class="card-img-top" src="https://source.unsplash.com/600x400/?cats" alt="">
+
+                <div class="card-body">
+                    <p class="card-text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia veniam corrupti possimus ut, et veritatis dolor numquam praesentium sed nihil!
+                    </p>
+
+                    <a href="#" class="btn btn-primary">Click me!</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-4"> <div class="card">
+            <div class="card-header">Cat of the day</div>
+            <img class="card-img-top" src="https://source.unsplash.com/600x400/?cats" alt="">
+
+            <div class="card-body">
+                <p class="card-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia veniam corrupti possimus ut, et veritatis dolor numquam praesentium sed nihil!
+                </p>
+
+                <a href="#" class="btn btn-primary">Click me!</a>
+            </div>
+
+        </div>
+    </div>
+        <div class="col-4"> <div class="card">
+            <div class="card-header">Cat of the day</div>
+            <img class="card-img-top" src="https://source.unsplash.com/600x400/?cats" alt="">
+
+            <div class="card-body">
+                <p class="card-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia veniam corrupti possimus ut, et veritatis dolor numquam praesentium sed nihil!
+                </p>
+
+                <a href="#" class="btn btn-primary">Click me!</a>
+            </div>
+
+        </div></div>
+    </div>
+</div>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Cliccami!
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <!-- ESEMPIO LOGIN FORM -->
+          <form action="">
+              <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="login" placeholder="username">
+                  <label for="login">Login</label>
+              </div>
+
+              <div class="form-floating">
+                  <input type="password" class="form-control" id="password" placeholder="password">
+                  <label for="password">Password</label>
+              </div>
+              
+              <button type="submit" class="btn btn-primary mt-3">Invia</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<footer id="footer" class="d-flex py-2 py-lg-5">
+<!-- footer con padding top e bottom (y) di 5 unità  -->
+<!-- con d-flex applico display-flex -->
+
+<div class="footerInfo mx-auto">
+    <!-- margine left e right automatico -->
+    Lorem ipsum dolor sit. 
 </div>
 </footer>
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<script>
+    const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+ //se voglio più slides per volta:
+   //slidesPerView: 3,
+   //spaceBetween: 30,
+    autoplay: {
+   delay: 5000,
+ },
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+</script>
+
+
+
 </body>
 </html>
