@@ -1,0 +1,27 @@
+.navbarWrapper {
+  position:fixed;
+  width:100%;
+}
+
+.navbar-brand svg {
+height:3rem;
+transition:all 0.5s;
+}
+
+.scrolled { /*CLASSE AGGIUNTA DAL JS*/
+  background:rgba(255,255,255,0.4);
+  backdrop-filter: blur(5px);
+}
+
+/*una volta che ho la classe sullo scroll posso agire sui suoi discendenti*/
+
+
+.scrolled svg path{
+
+  fill:rgb(0, 84, 99); /*agisco direttamente sul SVG*/
+
+}
+
+article {
+  padding-top: 4rem;
+}
